@@ -429,8 +429,7 @@ public class MockUnsafeValues implements UnsafeValues
 	@Override
 	public Material getMaterial(String material, int version)
 	{
-		// TODO Auto-generated method stub
-		throw new UnimplementedOperationException();
+		return Material.matchMaterial(material, version < 0);
 	}
 
 
