@@ -58,6 +58,7 @@ public class ItemMetaMock implements ItemMeta, Damageable, Repairable
 	private @Nullable List<String> lore = null;
 	private int damage = 0;
 	private int repairCost = 0;
+	private int version = 0;
 	private @Nullable Map<Enchantment, Integer> enchants = new HashMap<>();
 	private Multimap<Attribute, AttributeModifier> attributeModifiers;
 	private Set<ItemFlag> hideFlags = EnumSet.noneOf(ItemFlag.class);
@@ -910,8 +911,7 @@ public class ItemMetaMock implements ItemMeta, Damageable, Repairable
 	@Override
 	public void setVersion(int version)
 	{
-		// TODO Auto-generated method stub
-		throw new UnimplementedOperationException();
+		this.version = version;
 	}
 
 	@Deprecated(since = "1.20")
